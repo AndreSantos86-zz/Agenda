@@ -1,6 +1,13 @@
 <?php
  include_once("config/url.php");
+ include_once("config/process.php");
 
+ 
+ //limpa mensagem
+ if(isset($_SESSION['msg'])){
+   $printMsg = $_SESSION['msg'];
+   $_SESSION['msg'] = '';
+ }
 ?>
 
 
@@ -15,7 +22,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="<?= $BASE_URL?>css/styles.css">
+    <link rel="stylesheet" href="<?= $BASE_URL?>/css/styles.css">
 
     <!-- Fonte -->
     <script src="https://kit.fontawesome.com/664a7b0ef2.js" crossorigin="anonymous"></script>
