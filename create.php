@@ -12,7 +12,7 @@
         </div>
         <div class="form-group">
             <label for="phone">Telefone de contato:</label>
-            <input type="text" class="form-control" name="phone" id="phone" placeholder="Digite seu telefone" required>
+            <input type="text" class="form-control" name="phone" id="phone" placeholder="Digite seu telefone"  required>
         </div>
         <div class="form-group">
             <label for="observations">Observações:</label>
@@ -24,10 +24,5 @@
 <?php
  include_once("templates/footer.php");
  
- /*function formataTelefone($numero){
-    $formata = substr($numero, 0, 2);
-    $formata_2 = substr($numero, 3, 5);
-    $formata_3 = substr($numero, 4, 4);
-    return "(".$formata.") " . $formata_2 . "-". $formata_3;
- }*/
+ 
 ?>
